@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>reisetreff | info</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="lib/css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="lib/js/jQuery.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/js/amazingslider.js"></script>
+    <script type="text/javascript" src="lib/js/initslider-2.js"></script>
+    <script type="text/javascript" src="lib/js/superfish.js"></script>
+    <script type="text/javascript" src="lib/js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="lib/js/script.js"></script>
+</head>
+<body class="body-bg body-set">
+
+	<!--FB like button platform-->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+    <!-- HEADER TOUCH -->
+    <div class="header-fixed">
+        <div class="container">
+            <header class="site-header-touch row small-header-bg site-component">
+                <div class="col-xs-12 inner-touch-header">
+                    <div class="pull-left">
+                        <a class="site-logo" href="index.html"><img src="lib/img/logo.png"></a>
+                    </div>
+                    <nav class="container-btn-mobile pull-right ">
+                        <a id="m-check" class="btn btn-icon btn-default btn-pencil" href="#"><i class="icon icon-pencil"></i> <span id="list-order-mobile" class="list list-order">0</span></a>
+                        <a id="m-home" class="btn btn-icon btn-default btn-newsletter" href="#"><i class="icon icon-newsletter"></i></a>
+                        <a data-id="menu-mobile" class="btn btn-icon btn-toggle mobile-toggle menu" href="javascript:;" ><i class="icon icon-menu"></i></a>
+                        <a data-id="filter-mobile" class="btn btn-icon btn-toggle search mobile-toggle" href="javascript:;"><i class="icon icon-search"></i></a>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container">
+
+		<!--HEADER DESKTOP-->
+        <header id="site-header" class="site-header row header-bg site-component">
+		<!-- FACEBOOK LIKE BUTTON -->
+			<div class="site-facebook">
+				<div class="fb-like" data-href="index.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+			</div>
+            <div class="left-inner pull-left">
+                <a class="site-logo" href="index.html"><img src="lib/img/logo.png"></a>
+            </div>
+
+            <div class="right-inner pull-right">
+                <div class="check-list">
+                    <i class="icon icon-pencil"></i>
+                    <h3 class="entry-text">Ihr Merkzettel enthalt</h3>
+                    <a class="link-check" href="#"><span id="list-order" class="list list-order">0</span> Reisen</a>
+                </div>
+                <a href="#" class="container-info newsletter pull-left">
+                    <img src="lib/img/mail.png">
+                    <div class="text-info">
+                        <h4>Newsletter-Anmeldung</h4>
+                        <h4 class="entry-text">Regelmassig Reisetreff-Angebote per E-mail erhalten</h4>
+                    </div>
+                </a>
+                <div class="container-info pull-left">
+                    <img src="lib/img/profile.png">
+                    <div class="text-info">
+                        <h4 class="title-info">Buchungshotline</h4>
+                        <h4 class="title-info phone" href="tel:">0421 / 69 66 44-0</h4>
+                        <h4 class="entry-text">Mo-Fr 8-18 Uhr | Sa 8-13 Uhr</h4>
+                        <h4 class="entry-text">€ 0,048/Min. Zum Festnetztarif</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+
+        <div class="length-tomenu">
+    		<!--MENU-->
+            <nav id="site-menu" class="site-menu row nav-set">
+                <div class="col-xs-12 menu-inner menu-bg  site-component">
+                    <ul class="sf-menu">
+                        <li><a href="index.html">Frontpage</a></li>
+                        <li class="item-has-childern"><a href="#">Submenu</a>
+                            <ul>
+                                <li><a href="#">Submenu Item</a></li>
+                                <li><a href="#">Submenu Item</a></li>
+                                <li><a href="#">Submenu Item</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="result.html">Kurzansicht</a></li>
+                        <li><a href="detail.html">Detailansicht</a></li>
+                        <li><a href="landing.html">Landingpage</a></li>
+                        <li><a href="info.html">Infopage</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <!--MENU TOUCH SCREEN-->
+                <div id="menu-mobile-content" class="col-xs-12 menu-inner-mobile mobile-toggle-content menu-bg site-component">
+                    <nav class="menu-mobile">
+                        <ul>
+                            <li><a href="index.html">Frontpage</a></li>
+                            <li class="item-has-childern"><a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Submenu Item</a></li>
+                                    <li><a href="#">Submenu Item</a></li>
+                                    <li><a href="#">Submenu Item</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="result.html">Kurzansicht</a></li>
+                            <li><a href="detail.html">Detailansicht</a></li>
+                            <li><a href="landing.html">Landingpage</a></li>
+                            <li><a href="info.html">Infopage</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+
+            <div id="site-filter" class="site-filter row ">
+                <!--FILTER TOUCH-->
+                <div id="filter-mobile-content" class="col-xs-12 filter-inner-mobile mobile-toggle-content filter-bg site-component">
+                    <nav class="dropdown item-filter btn-group">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="filter-option pull-left" data-bind="label">Zielgebiet</span> <span class="icon icon-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                            <li><span class="text">Zielgebiet 0</span></li>
+                            <li><span class="text">Zielgebiet 1</span></li>
+                            <li><span class="text">Zielgebiet 2</span></li>
+                            <li><span class="text">Zielgebiet 3</span></li>
+                        </ul>
+                    </nav>
+                    <form  class="priod item-filter" method="s" name="s">
+                        <input class="search pull-left" type="text" placeholder="Reisezeitraum">
+                        
+                        <button class="pull-left" type="button"><i class="icon icon-calendar"></i></button>
+                    </form>
+                    <form  class="priod item-filter" method="s" name="s">
+                        <input class="search pull-left" type="text" placeholder="Reisezeitraum">
+                        
+                        <button class="pull-left" type="button"><i class="icon icon-calendar"></i></button>
+                    </form>
+                    <div class="container-select-box">
+                        <nav class="dropdown item-filter">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="filter-option pull-left" data-bind="label">Preislimit</span> <span class="icon icon-down"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                                <li><span class="text">Preislimit 0</span></li>
+                                <li><span class="text">Preislimit 1</span></li>
+                                <li><span class="text">Preislimit 2</span></li>
+                                <li><span class="text">Preislimit 3</span></li>
+                            </ul>
+                        </nav>
+                        <nav class="dropdown item-filter">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="filter-option pull-left" data-bind="label">Reederei</span> <span class="icon icon-down"></span>
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="dLabel" role="menu">
+                                <li><span class="text">Reederei 0</span></li>
+                                <li><span class="text">Reederei 1</span></li>
+                                <li><span class="text">Reederei 2</span></li>
+                                <li><span class="text">Reederei 3</span></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <span class="container-suchen pull-left">
+                        <a class="btn btn-medium btn-default suchen" href="#">suchen</a>
+                    </span>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <!--FILTER DESKTOP-->
+            <div id="site-filter" class="site-filter row ">
+                <div class="col-xs-12 filter-inner filter-bg site-component">
+                    <div class="container-item-filter">
+                        <nav class="dropdown item-filter pull-left">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="filter-option pull-left" data-bind="label">Zielgebiet</span> <span class="icon icon-down"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                                <li><span class="text">Zielgebiet 0</span></li>
+                                <li><span class="text">Zielgebiet 1</span></li>
+                                <li><span class="text">Zielgebiet 2</span></li>
+                                <li><span class="text">Zielgebiet 3</span></li>
+                            </ul>
+                        </nav>
+                        <form  class="priod item-filter pull-left" method="s" name="s">
+                            <input class="search pull-left" type="text" placeholder="Reisezeitraum">
+                            <span class="line-range"></span>
+                            <button class="pull-left" type="button"><i class="icon icon-calendar"></i></button>
+                        </form>
+                        <form  class="priod item-filter pull-left" method="s" name="s">
+                            <input class="search pull-left" type="text" placeholder="Reisezeitraum">
+                            <span class="line-range"></span>
+                            <button class="pull-left" type="button"><i class="icon icon-calendar"></i></button>
+                        </form>
+                        <nav class="dropdown item-filter pull-left">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="filter-option pull-left" data-bind="label">Preislimit</span> <span class="icon icon-down"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                                <li><span class="text">Preislimit 0</span></li>
+                                <li><span class="text">Preislimit 1</span></li>
+                                <li><span class="text">Preislimit 2</span></li>
+                                <li><span class="text">Preislimit 3</span></li>
+                            </ul>
+                        </nav>
+                        <nav class="dropdown item-filter pull-left">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="filter-option pull-left" data-bind="label">Reederei</span> <span class="icon icon-down"></span>
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="dLabel" role="menu">
+                                <li><span class="text">Reederei 0</span></li>
+                                <li><span class="text">Reederei 1</span></li>
+                                <li><span class="text">Reederei 2</span></li>
+                                <li><span class="text">Reederei 3</span></li>
+                            </ul>
+                        </nav>
+                        <span class="container-suchen pull-right">
+                            <a class="btn btn-medium btn-default suchen" href="#">suchen</a>
+                        </span>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+        	<!--MAIN--> 
+        	<div id="site-main" class="site-main row site-component">
+                <div class=" content-bg image-lightBox standard-page col-xs-12"> 
+
+                    <h1 class="headline headline-set">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+						lorem quis bibendum auctor, nisi elit consequat ipsum.
+					</h1>
+                    <p>Nullam ac urna eu felis dapibus condimentum . Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+						nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+						ipsum velit. <a class="link-standard" href="#page-lightBox2">Nam nec tellus</a> a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+						sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+						sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+						feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+						Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
+						nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+					</p>
+                    <div class="image-full">
+                        <a class="link-image" href="media/slide/8.jpg" title="Nullam ac urna eu felis dapibus condimentum. Proin gravida nibh vel velit auctor aliquet."><img alt="" src="media/slide/8.jpg"></a>
+                        <p class="caption-image">Nullam ac urna eu felis dapibus condimentum.
+							Proin gravida nibh vel velit auctor aliquet.
+						</p>
+                    </div>
+                    <p>Nullam ac urna eu felis dapibus condimentum . Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+						nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+						ipsum velit. <a class="link-standard" href="#page-lightBox2">Nam nec tellus</a> a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+						sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+						sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+						feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+						Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
+						nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+					</p>
+                    <div class="col-xs-12 container-left component">
+                        <div class="col-xs-12 col-sm-6 component two-column">
+                            <div class="image-left">
+                                <a class="link-image" href="media/slide/item-1.jpg" title="Nullam ac urna eu felis dapibus condimentum. Proin gravida nibh vel velit auctor aliquet."><img alt="" src="media/slide/item-1.jpg"></a>
+                                <p class="caption-image">Nullam ac urna eu felis dapibus condimentum.
+								   Proin gravida nibh vel velit auctor aliquet.
+								</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 component">
+                            <p>Nullam ac urna eu felis dapibus condimentum . Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+								nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+								ipsum velit. <a class="link-standard" href="#page-lightBox2">Nam nec tellus</a> a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+								sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+								sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+								feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+								Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
+								nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+							</p>
+                        </div>
+                    </div>
+                    <p>Nullam ac urna eu felis dapibus condimentum . Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+						nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+						ipsum velit. <a class="link-standard" href="#page-lightBox2">Nam nec tellus</a> a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+						sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+						sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+						feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+						Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
+						nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+					</p>
+                    <p> per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+						sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+						feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+						Nullam ac urna eu felis dapibus condimentum sit amet a augue.
+					</p>
+                    <p>Nullam ac urna eu felis dapibus condimentum . Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+						nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+						ipsum velit. <a class="link-standard" href="#page-lightBox2">Nam nec tellus</a> a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+						sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+						sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+						feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+						Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
+						nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+					</p>
+
+                    <!-- PAGE POPUP -->
+                    <div id="page-lightBox2" class="page-lightBox" style="display: none">
+                        <h1 class="headline headline-set">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                            lorem quis bibendum auctor, nisi elit consequat ipsum.
+                        </h1>
+                        <p>Nullam ac urna eu felis dapibus condimentum . Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                            nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                            ipsum velit. <a class="link-standard" href="#" >Nam nec tellus</a> a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+                            sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+                            feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+                            Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
+                            nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+                        </p>
+                        <p>Nullam ac urna eu felis dapibus condimentum . Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                            nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                            ipsum velit. <a class="link-standard" href="#">Nam nec tellus</a> a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+                            sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum
+                            sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+                            feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+                            Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
+                            nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--FOOTER-->
+        <footer id="site-footer" class="site-footer row footer-bg">
+            <div class="col-xs-12 footer-inner">
+                <div class="footer-desktop">
+                    <div class="footer-menu pull-left">
+                        <span class="footer-logo">
+                            <a class="logo" href="index.html"><img src="lib/img/logo.png"></a>
+                        </span>
+                        <div class="footer-info">
+                            <h4 class="reservation">Buchungshotline</h4>
+                            <h4 class=" phone">0421/ 69 66 44-0</h4>
+                            <h4 class="entry-text">Mo-Fr 8-18 Uhr | Sa 8-13 Uhr</h4>
+                            <h4 class="entry-text">0,048/Min. Zum Festnetztarif</h4>
+                        </div>
+                        <div class="nav-social footer-nav-set">
+                            <a href="#">www.die-perfekte-kreuzfahrt.de</a>
+                            <a href="#">info@die-perfekte-kreuzfahrt.de</a>
+                            <a href="#" class="fb-link">Empfehlen Sie uns weiter</a>
+                        </div>
+                        <nav class="nav-menu-footer footer-nav-set capitalis">
+                            <ul>
+                                <li><a href="#">impressum</a></li>
+                                <li><a href="#">agb</a></li>
+                                <li><a href="#">newsletter</a></li>
+                                <li><a href="#">kontakt</a></li>
+                                <li><a href="#">unsere buros</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <nav class="nav-menu-footer item-footer footer-nav-set pull-left">
+                        <h3 class="title-menu-footer">Schiffe</h3>
+                        <ul>
+                            <li><a href="#">AIDAblu</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">AIDAdiva</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="nav-menu-footer item-footer footer-nav-set reiseregionen pull-left">
+                        <h3 class="title-menu-footer">Reiseregionen</h3>
+                        <ul class="split-list">
+                            <li><a href="#">AIDAblu</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">AIDAdiva</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAblu</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">AIDAdiva</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAblu</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">AIDAdiva</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--FOOTER TOUCH-->
+                <nav class="footer-menu-mobile">
+                   <div class="inner-footer-mobile">
+                        <span class="footer-logo">
+                            <a class="logo" href="index.html"><img src="lib/img/logo.png"></a>
+                        </span>
+                        <div class="footer-info pull-left">
+                            <h4 class="reservation">Buchungshotline</h4>
+                            <h4 class="phone">0421 / 69 66 44-0</h4>
+                            <h4 class="entry-text">Mo-Fr 8-18 Uhr | Sa 8-13 Uhr</h4>
+                            <h4 class="entry-text">0,048/Min. Zum Festnetztarif</h4>
+                        </div>
+                        <div class="nav-social footer-nav-set pull-left">
+                            <a href="#">www.die-perfekte-kreuzfahrt.de</a>
+                            <a href="#">info@die-perfekte-kreuzfahrt.de</a>
+                            <div class="site-facebook">
+                                <div class="fb-like" data-href="index.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                            </div>
+                        </div>
+                        <div class="container-btn-social btn-icon pull-left">
+                            <a class="btn btn-default" href="mailto:"><i class="icon icon-newsletter"></i></a>
+                            <a class="btn btn-default" href="#" ><i class="icon icon-fb_pos"></i></a>
+                            <a class="btn btn-default" href="mailto:"><i class="icon icon-mail"></i></a>
+                            <a class="btn btn-default phone-btn" href="tel:"><i class="icon icon-phone"></i></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>reisetreff | detail</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5.js"></script>
+    <![endif]-->
+        <!--     <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="lib/css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="lib/js/jQuery.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/js/amazingslider.js"></script>
+    <script type="text/javascript" src="lib/js/initslider-2.js"></script>
+    <script type="text/javascript" src="lib/js/superfish.js"></script>
+    <script type="text/javascript" src="lib/js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="lib/js/script.js"></script>
+</head>
+<body class="body-bg body-set">
+
+   <!--FB like button platform-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- HEADER TOUCH SCREEN -->
+    <div class="header-fixed">
+        <div class="container">
+            <header class="site-header-touch row small-header-bg site-component">
+                <div class="col-xs-12 inner-touch-header">
+                    <div class="pull-left">
+                        <a class="site-logo" href="index.html"><img src="lib/img/logo.png"></a>
+                    </div>
+                    <nav class="container-btn-mobile pull-right ">
+                        <a id="m-check" class="btn btn-icon btn-default btn-pencil" href="#"><i class="icon icon-pencil"></i> <span id="list-order-mobile" class="list list-order">0</span></a>
+                        <a id="m-home" class="btn btn-icon btn-default btn-newsletter hidden-xs" href="#"><i class="icon icon-newsletter"></i></a>
+                        <a data-id="menu-mobile" class="btn btn-icon btn-toggle mobile-toggle menu" href="javascript:;" ><i class="icon icon-menu"></i></a>
+                        <a data-id="filter-mobile" class="btn btn-icon btn-toggle btn-default search mobile-toggle" href="javascript:;"><i class="icon icon-search"></i></a>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!--HEADER DESKTOP-->
+        <header id="site-header" class="site-header row header-bg site-component">
+        <!-- FACEBOOK LIKE BUTTON -->
+            <div class="site-facebook">
+                <div class="fb-like" data-href="index.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+            </div>
+            <div class="left-inner pull-left">
+                <a class="site-logo" href="index.html"><img src="lib/img/logo.png"></a>
+            </div>
+
+            <div class="right-inner pull-right">
+                <div class="check-list">
+                    <i class="icon icon-pencil"></i>
+                    <h3 class="entry-text">Ihr Merkzettel enthalt</h3>
+                    <a class="link-check" href="#"><span id="list-order" class="list list-order">0</span> Reisen</a>
+                </div>
+
+                <a href="#" class="container-info newsletter pull-left">
+                    <img src="lib/img/mail.png">
+                    <div class="text-info">
+                        <h4>Newsletter-Anmeldung</h4>
+                        <h4 class="entry-text">Regelmassig Reisetreff-Angebote per E-mail erhalten</h4>
+                    </div>
+                </a>
+                <div class="container-info pull-left">
+                    <img src="lib/img/profile.png">
+                    <div class="text-info">
+                        <h4 class="title-info">Buchungshotline</h4>
+                        <h4 class="title-info phone" href="tel:">0421 / 69 66 44-0</h4>
+                        <h4 class="entry-text">Mo-Fr 8-18 Uhr | Sa 8-13 Uhr</h4>
+                        <h4 class="entry-text">€ 0,048/Min. Zum Festnetztarif</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+
+        <div class="length-tomenu">
+            <!--MENU-->
+            <nav id="site-menu" class="site-menu row nav-set">
+                <div class="col-xs-12 menu-inner menu-bg  site-component">
+                    <ul class="sf-menu">
+                        <li><a href="index.html">Frontpage</a></li>
+                        <li class="item-has-childern"><a href="#">Submenu</a>
+                            <ul>
+                                <li><a href="#">Submenu Item</a></li>
+                                <li><a href="#">Submenu Item</a></li>
+                                <li><a href="#">Submenu Item</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="result.html">Kurzansicht</a></li>
+                        <li><a href="detail.html">Detailansicht</a></li>
+                        <li><a href="landing.html">Landingpage</a></li>
+                        <li><a href="info.html">Infopage</a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <!--MENU TOUCH SCREEN-->
+                <div id="menu-mobile-content" class="col-xs-12 menu-inner-mobile mobile-toggle-content menu-bg site-component">
+                    <nav class="menu-mobile">
+                        <ul>
+                            <li><a href="index.html">Frontpage</a></li>
+                            <li class="item-has-childern"><a href="#">Submenu</a>
+                                <ul>
+                                    <li><a href="#">Submenu Item</a></li>
+                                    <li><a href="#">Submenu Item</a></li>
+                                    <li><a href="#">Submenu Item</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="result.html">Kurzansicht</a></li>
+                            <li><a href="detail.html">Detailansicht</a></li>
+                            <li><a href="landing.html">Landingpage</a></li>
+                            <li><a href="info.html">Infopage</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+
+            <div id="site-filter" class="site-filter row ">
+                <!--FILTER TOUCH-->
+                <div id="filter-mobile-content" class="col-xs-12 filter-inner-mobile mobile-toggle-content filter-bg site-component">
+                    <nav class="dropdown item-filter btn-group">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="filter-option pull-left" data-bind="label">Zielgebiet</span> <span class="icon icon-down"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                            <li><span class="text">Zielgebiet 0</span></li>
+                            <li><span class="text">Zielgebiet 1</span></li>
+                            <li><span class="text">Zielgebiet 2</span></li>
+                            <li><span class="text">Zielgebiet 3</span></li>
+                        </ul>
+                    </nav>
+                    <form  class="priod item-filter" method="s" name="s">
+                        <input class="search pull-left" type="text" placeholder="Reisezeitraum">
+                        <button class="pull-left" type="button"><i class="icon icon-calendar"></i></button>
+                    </form>
+                    <form  class="priod item-filter" method="s" name="s">
+                        <input class="search pull-left" type="text" placeholder="Reisezeitraum">
+                        <button class="pull-left" type="button"><i class="icon icon-calendar"></i></button>
+                    </form>
+                    <div class="container-select-box">
+                        <nav class="dropdown item-filter">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="filter-option pull-left" data-bind="label">Preislimit</span> <span class="icon icon-down"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+                                <li><span class="text">Preislimit 0</span></li>
+                                <li><span class="text">Preislimit 1</span></li>
+                                <li><span class="text">Preislimit 2</span></li>
+                                <li><span class="text">Preislimit 3</span></li>
+                            </ul>
+                        </nav>
+                        <nav class="dropdown item-filter">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="filter-option pull-left" data-bind="label">Reederei</span> <span class="icon icon-down"></span>
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="dLabel" role="menu">
+                                <li><span class="text">Reederei 0</span></li>
+                                <li><span class="text">Reederei 1</span></li>
+                                <li><span class="text">Reederei 2</span></li>
+                                <li><span class="text">Reederei 3</span></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <span class="container-suchen pull-left">
+                        <a class="btn btn-medium btn-default suchen" href="#">suchen</a>
+                    </span>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <!--MAIN-->
+            <div id="site-main" class="site-main row site-component">
+
+                <!--ITEM DETAIL-->
+                <div class="item-container item-detail slide-detail-bg">
+                    <!--ITEM IMAGE SLIDE-->
+                    <div class="item-image item-image-slide col-xs-12 col-md-8">
+                         <div id="amazingslider-1" class="amazingslider" style="display:block;position:relative;">
+                             <ul class="amazingslider-slides amazingslider-preview" style="display:none;">
+                                <!-- IMAGE 580x280 -->
+                                <li><img src="media/slide/item-1.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the industry"/></li>
+                                <li><img src="media/slide/item-1.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the industry"/></li>
+                                <li><img src="media/slide/item-1.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the industry"/></li>
+                                <li><img src="media/slide/item-1.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the industry"/></li>
+                                <li><img src="media/slide/item-1.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the industry"/></li>
+                                <li><img src="media/slide/item-1.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the industry"/></li>
+                                <li><img src="media/slide/item-1.jpg" alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry simply dummy text of the industry"/></li>
+                            </ul>
+                            <ul class="amazingslider-thumbnails" style="display:none;">
+                                <!-- IMAGE 142x90 -->
+                                <li><img src="media/slide/item-1.jpg" /></li>
+                                <li><img src="media/slide/item-1.jpg" /></li>
+                                <li><img src="media/slide/item-1.jpg" /></li>
+                                <li><img src="media/slide/item-1.jpg" /></li>
+                                <li><img src="media/slide/item-1.jpg" /></li>
+                                <li><img src="media/slide/item-1.jpg" /></li>
+                                <li><img src="media/slide/item-1.jpg" /></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                     <!--ITEM CONTENT DETAIL-->
+                    <div class="content-detail">
+                        <div class="item-content entry-content col-xs-12 col-md-4">
+                            <div class="item-head">
+                                <h4 class="entry-text-bread">afrika <span>|</span> westliches mittelmeer</h4>
+                                <h1 class="headline headline-set">AIDAasol</h1>
+                                <p class="form-text">Termin: 26. Okt 2014-01. Nov 2014</p>
+                            </div>
+                            <ul>
+                                <li>6 Tage mit AIDAblu vom mittelmeeer zu den kanarischen Inseln fahren!</li>
+                                <li>Beeindruckende bauten in cadiz, die kathedrale von palma</li>
+                                <li>Herrliche Natur in Arrecife oder exotisches flair in Casablanca</li>
+                            </ul>
+                            <div class="site-facebook">
+                                <div class="fb-like" data-href="detail.html" data-layout="button_count" data-action="recommend" data-show-faces="true" data-share="false"></div>
+                            </div>
+                            <ul class="menu-detail">
+                                <li><a class="check-out" href="javascript:;">merken</a><a class="sold-out" href="javascript:;">gemerkt</a></li>
+                                <li><a href="#">weiterempfehlen</a></li>
+                                <li><a href="#">pdf download</a></li>
+                                <li><a href="#">angebot drucken</a></li>
+                            </ul>
+                            <div class="item-foot">
+                                <div class="item-price">
+                                    <div class="pull-left frame-price">
+                                        <h4 class="entry-text">Pro Person ab</h4>
+                                        <h1 class="price price-set">
+                                            25.399,- €
+                                        </h1>
+                                    </div>
+                                    <a href="javascript:;" class="btn btn-medium btn-default btn-detail btn-toRegister" data-target="price">buchen</a>
+                                    <a href="#form-detail" class="btn btn-medium btn-default btn-detail link-standard">preis alarm</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div id="form-detail" class="container-form-detail">
+                            <h1 class="headline-set">Ich mochte immer dann eine E-Mail erhalten, wenn der preis dieser kreuzfahrt sinkt. Dieser Service ist kostenlos.</h1>
+                            <input type="text" class="input-detail" placeholder="Name">
+                            <input type="text" class="input-detail" placeholder="E-Mail">
+                            <form action="" class="form-detail">
+                                <input type="text" class="input-detail pull-left" placeholder="Wunschtermin">
+
+                                <button class="btn-submit pull-left"><i class="icon icon-calendar"></i></button>
+                            </form>
+                            <div class="clearfix"></div>
+                            <button class="btn btn-medium btn-default btn-send">senden</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PAGE DETAIL-->
+                <div class="page-detail">
+                    <!--PAGE CONTENT -->
+                    <div class="auto-bg auto-content-bg desktop-content col-md-8"><div class="inner-bg content-bg"></div></div>
+                    <div class="content-inner content-bg">
+                        <div class="page-collapse entry-content content-touch content-bg col-xs-12 col-md-8">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="btn btn-medium btn-block btn-toTop">
+                                            <div class="text-detail">ihr hotel</div>
+                                            <i class="icon icon-up text-detail pull-right"></i>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                    </div>
+                                    <div class="panel-collapse">
+                                        <div class="panel-body">
+                                            <h2>Lage:</h2>
+                                            <p>Direkt am weißen Sandstrand von Santa Susanna, in das Ortszentrum gehen Sie ca.
+                                            300m, nach Barcelona sind es etwa 50km.</p>
+
+                                            <h2>Hotelbeschreibung:</h2>
+                                            <p>Das komplett renovierte und im Frühjahr 2013 wiedereröffnete Haus mit 128 Zimmern
+                                            besticht vor allem durch seine absolut privilegierte Lage am langen Strand. Bei der
+                                            Innenausstattung wurde viel Wert auf traditionelles mediterranes Ambiente und die
+                                            Bedürfnisse der Urlauber gelegt. Das Konzept ist gelungen, im Hotel FERGUS Style Mar
+                                            Mediterrania finden junge Erwachsene ab 16 Jahren hervorragende Rahmenbedingungen
+                                            für einen perfekten Urlaub. Die großzügige Empfangshalle lädt mit einem Lounge
+                                            Bereich zum Verweilen ein. Hier finden Sie die Rezeption, Lift, Internet Ecke und einige
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="btn btn-block btn-medium btn-toTop">
+                                            <div class="text-detail">leistungen</div>
+                                            <i class="icon icon-up text-detail pull-right"></i>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                    </div>
+                                    <div class="panel-collapse">
+                                        <div class="panel-body">
+                                            <h2>Zimmerausstattung:</h2>
+                                            <p>Die eleganten Doppelzimmer sind ausgestattet mit Parkettboden, Bad/Dusche, WC,
+                                            Föhn, Klimaanlage, Telefon, LCD-Sat.-TV, Safe, Minibar und Balkon oder Terrasse mit
+                                            Meerblick.</p>
+
+                                            <h2>Verpflegung:</h2>
+                                            <p>Reichhaltiges Frühstücksbuffet. Bei Buchung von All inclusive erhalten Sie Frühstück,
+                                            Mittag und Abendessen in Buffetform sowie lokale alkoholische und nicht alkoholische
+                                            Getränke 11.00 - 23.00 Uhr.</p>
+
+                                            <h2>Unterhaltung:</h2>
+                                            <p>Am Tag leichtes Animationsprogramm. Entlang der Promenade in den Nachbarort
+                                            Malgrat de Mar herrscht am Abend reges Treiben. Bars und Diskotheken sorgen für
+                                            Abwechslung.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="price" class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="btn btn-block btn-medium btn-toTop">
+                                            <div class="text-detail">termine & preise leistungen</div>
+                                            <i class="icon icon-up text-detail pull-right"></i>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                    </div>
+                                    <div class="panel-collapse">
+                                        <div class="panel-body table-body">
+                                            <div class="site-table">
+                                                <h2 class='content-title'>termine fur route mittelmeer 1 mit aidavita</h2>
+                                                <div class="table-frame table-price">
+                                                    <div class="row row-caption">
+                                                        <div class="col-xs-12 col-content">
+                                                            <div class="row-element">
+                                                                <div class="col-small">Datum</div>
+                                                                <div class="col-small">Dauer</div>
+                                                                <div class="col-large" style="visibility: hidden; opacity: 0;">s</div>
+                                                                <div class="col-small small-right">Preis p.P. ab</div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row row-content">
+                                                        <div class="col-xs-12  col-content">
+                                                            <div class="row-element">
+                                                                <div class="item-mobile">18.10.2014, 15 Nachte</div>
+                                                                <div class="col-small item-desktop">18.10.2014</div>
+                                                                <div class="col-small item-desktop">15 Nachte</div>
+                                                                <div class="col-large">
+                                                                    <button class="btn-table">jetzt buchen</button>
+                                                                </div>
+                                                                <div class="col-small small-right">1.200,- €</div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="row-element">
+                                                            	<div class="item-mobile">18.10.2014, 15 Nachte</div>
+                                                                <div class="col-small item-desktop">18.10.2014</div>
+                                                                <div class="col-small item-desktop">15 Nachte</div>
+                                                                <div class="col-large">
+                                                                    <button class="btn-table">jetzt buchen</button>
+                                                                </div>
+                                                                <div class="col-small small-right">1.200,- €</div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="foot-text-table">
+                                            <p>Bei allen mit (V) und (P) gekennzeichneten Abfahrten handelt es sich um<br>VARIO-kabien. sie haben keinen Einfluss auf die lage und Kategorie lhrer Kabine.</p>
+                                            <p>AIDA Preis pro person bei Unterbringung in der Dopple-Kabine mit 2 personen.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="btn btn-block btn-medium btn-toTop">
+                                            <div class="text-detail">Reiseverlauf </div>
+                                            <i class="icon icon-up text-detail pull-right"></i>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                    </div>
+                                    <div class="panel-collapse">
+                                        <div class="panel-body table-body">
+                                            <div class="site-table">
+                                                <h2 class='content-title'>termine fur route mittelmeer 1 mit aidavita</h2>
+                                                <div class="table-frame">
+                                                    <div class="row row-caption">
+                                                        <div class="col-xs-12 col-content">
+                                                            <div class="row-element col-title">
+                                                                <div class="col-small extra-small">Tag</div>
+                                                                <div class="col-small">Datum</div>
+                                                                <div class="col-large">Hafen</div>
+                                                                <div class="col-small">Ankunft</div>
+                                                                <div class="col-small">Abfahrt</div>
+                                                                <div class="col-large">Landausfluge</div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row row-content">
+                                                        <div class="col-xs-12 col-content">
+                                                            <div class="col-wide item-mobile">SO, 17.08</div>
+                                                            <div class="row-element">
+                                                                <div class="col-small extra-small item-desktop">So</div>
+                                                                <div class="col-small item-desktop">17.08.</div>
+                                                                <div class="col-large item-desktop">Einschiffung ab ca 15.00 Uhr Bremerhaven</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Hafen :</span>
+                                                                    <span class="textt">Einschiffung ab ca 15.00 Uhr Bremerhaven</span>
+                                                                </div>
+                                                                <div class="col-small item-desktop">08.30</div>
+                                                                <div class="col-small item-desktop">16.30</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Ankunft / Abfahrt :</span>
+                                                                    <span class="textt">-/16.00</span>
+                                                                </div>
+                                                                <div class="col-large item-desktop">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Landausfluge :</span>
+                                                                    <span class="textt">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</span>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="col-wide item-mobile">MO, 17.08</div>
+                                                            <div class="row-element">
+                                                                <div class="col-small extra-small item-desktop">Mo</div>
+                                                                <div class="col-small item-desktop">17.08.</div>
+                                                                <div class="col-large item-desktop">Einschiffung ab ca 15.00 Uhr Bremerhaven</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Hafen :</span>
+                                                                    <span class="textt">Einschiffung ab ca 15.00 Uhr Bremerhaven</span>
+                                                                </div>
+                                                                <div class="col-small item-desktop">08.30</div>
+                                                                <div class="col-small item-desktop">16.30</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Ankunft / Abfahrt :</span>
+                                                                    <span class="textt">-/16.00</span>
+                                                                </div>
+                                                                <div class="col-large item-desktop">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Landausfluge :</span>
+                                                                    <span class="textt">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</span>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="col-wide item-mobile">DI, 17.08</div>
+                                                            <div class="row-element">
+                                                                <div class="col-small extra-small item-desktop">Di</div>
+                                                                <div class="col-small item-desktop">17.08.</div>
+                                                                <div class="col-large item-desktop">Einschiffung ab ca 15.00 Uhr Bremerhaven</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Hafen :</span>
+                                                                    <span class="textt">Einschiffung ab ca 15.00 Uhr Bremerhaven</span>
+                                                                </div>
+                                                                <div class="col-small item-desktop">08.30</div>
+                                                                <div class="col-small item-desktop">16.30</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Ankunft / Abfahrt :</span>
+                                                                    <span class="textt">-/16.00</span>
+                                                                </div>
+                                                                <div class="col-large item-desktop">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Landausfluge :</span>
+                                                                    <span class="textt">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</span>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="col-wide item-mobile">MI, 17.08</div>
+                                                            <div class="row-element">
+                                                                <div class="col-small extra-small item-desktop">Mi</div>
+                                                                <div class="col-small item-desktop">17.08.</div>
+                                                                <div class="col-large item-desktop">Einschiffung ab ca 15.00 Uhr Bremerhaven</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Hafen :</span>
+                                                                    <span class="textt">Einschiffung ab ca 15.00 Uhr Bremerhaven</span>
+                                                                </div>
+                                                                <div class="col-small item-desktop">08.30</div>
+                                                                <div class="col-small item-desktop">16.30</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Ankunft / Abfahrt :</span>
+                                                                    <span class="textt">-/16.00</span>
+                                                                </div>
+                                                                <div class="col-large item-desktop">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Landausfluge :</span>
+                                                                    <span class="textt">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</span>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="col-wide item-mobile">DO, 17.08</div>
+                                                            <div class="row-element">
+                                                                <div class="col-small extra-small item-desktop">Do</div>
+                                                                <div class="col-small item-desktop">17.08.</div>
+                                                                <div class="col-large item-desktop">Einschiffung ab ca 15.00 Uhr Bremerhaven</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Hafen :</span>
+                                                                    <span class="textt">Einschiffung ab ca 15.00 Uhr Bremerhaven</span>
+                                                                </div>
+                                                                <div class="col-small item-desktop">08.30</div>
+                                                                <div class="col-small item-desktop">16.30</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Ankunft / Abfahrt :</span>
+                                                                    <span class="textt">-/16.00</span>
+                                                                </div>
+                                                                <div class="col-large item-desktop">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Landausfluge :</span>
+                                                                    <span class="textt">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</span>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="col-wide item-mobile">FR, 17.08</div>
+                                                            <div class="row-element">
+                                                                <div class="col-small extra-small item-desktop">Fr</div>
+                                                                <div class="col-small item-desktop">17.08.</div>
+                                                                <div class="col-large item-desktop">Einschiffung ab ca 15.00 Uhr Bremerhaven</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Hafen :</span>
+                                                                    <span class="textt">Einschiffung ab ca 15.00 Uhr Bremerhaven</span>
+                                                                </div>
+                                                                <div class="col-small item-desktop">08.30</div>
+                                                                <div class="col-small item-desktop">16.30</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Ankunft / Abfahrt :</span>
+                                                                    <span class="textt">-/16.00</span>
+                                                                </div>
+                                                                <div class="col-large item-desktop">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Landausfluge :</span>
+                                                                    <span class="textt">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</span>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                            <div class="col-wide item-mobile">SA, 17.08</div>
+                                                            <div class="row-element">
+                                                                <div class="col-small extra-small item-desktop">Sa</div>
+                                                                <div class="col-small item-desktop">17.08.</div>
+                                                                <div class="col-large item-desktop">Einschiffung ab ca 15.00 Uhr Bremerhaven</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Hafen :</span>
+                                                                    <span class="textt">Einschiffung ab ca 15.00 Uhr Bremerhaven</span>
+                                                                </div>
+                                                                <div class="col-small item-desktop">08.30</div>
+                                                                <div class="col-small item-desktop">16.30</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Ankunft / Abfahrt :</span>
+                                                                    <span class="textt">-/16.00</span>
+                                                                </div>
+                                                                <div class="col-large item-desktop">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</div>
+                                                                <div class="col-large item-mobile">
+                                                                    <span class="text">Landausfluge :</span>
+                                                                    <span class="textt">GTuberlandfarht nach Flam via Voss GT Uberlandfarht nach Flam via Stalberg</span>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="foot-text-table">
+                                            <p>Bei allen mit (V) und (P) gekennzeichneten Abfahrten handelt es sich um<br>VARIO-kabien. sie haben keinen Einfluss auf die lage und Kategorie lhrer Kabine.</p>
+                                            <p>AIDA Preis pro person bei Unterbringung in der Dopple-Kabine mit 2 personen.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--PAGE SIDEBAR-->
+                    <div class="auto-bg auto-sidebar-bg col-md-4 col-md-offset-8 desktop-content sidebar-bg"></div>
+                    <div class="page-sidebar col-xs-12 col-md-4 sidebar-bg">
+                        <div class="widget widget-map-text">
+                            <div class="widget-map">
+                                <a class="map-fancybox" href="javascript:;"><img src="media/map2.png"></a>
+                                <!-- PAGE POPUP -->
+                                <div id="map_2" class="page-lightBox" style="display: none">
+                                    <iframe height="100%" width="100%" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7888.352375525596!2d115.21312644999999!3d-8.674789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1404808812672" frameborder="0" style="border:0"></iframe>
+                                </div>
+                            </div>
+                            <div class="widget-text widget-bg">
+                                <h2 class="content-title">route mittelmeer 1mit aidavita</h2>
+                                <ul>
+                                    <li>Tag Palma de mallorca / Spanien</li>
+                                    <li>Tag Erholung auf See</li>
+                                    <li>Tag Cadiez / Spanien</li>
+                                    <li>Tag Tanger / Marokko</li>
+                                    <li>Tag Malaga / Spanien</li>
+                                    <li>Tag Cartagina / Spanien</li>
+                                    <li>Tag Valencia / Spanien</li>
+                                    <li>Tag Palma de Mallorca / Spanien</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="widget widget-info widget-bg">
+                            <h4 class="title-info">Haben Sie noch Fragen zu diesem Angebot?</h4>
+                            <p>Unser Service - und Buchungsteam ist lhnen telefonisch von oder per Email gerne behilflich. </p>
+                            <h4 class="widget-phone-set">0421 / 69 66 44-0</h4>
+                            <p class="entry-text">Mo-Fr 8-18 Uhr | sa 8-13 Uhr<br>
+                            € 0,048/Min.Zum Festnetztarif</p>
+                            <div class="widget-footer">
+                                <a href="#">info@die-perfekte-kreuzfahrt.de</a>
+                                <a href="#">Newsletter-Anmeldung</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--FOOTER-->
+        <footer id="site-footer" class="site-footer row footer-bg">
+            <div class="col-xs-12 footer-inner">
+                <div class="footer-desktop">
+                    <div class="footer-menu pull-left">
+                        <span class="footer-logo">
+                            <a class="logo" href="index.html"><img src="lib/img/logo.png"></a>
+                        </span>
+                        <div class="footer-info">
+                            <h4 class="reservation">Buchungshotline</h4>
+                            <h4 class=" phone">0421 / 69 66 44-0</h4>
+                            <h4 class="entry-text">Mo-Fr 8-18 Uhr | Sa 8-13 Uhr</h4>
+                            <h4 class="entry-text">0,048/Min. Zum Festnetztarif</h4>
+                        </div>
+                        <div class="nav-social footer-nav-set">
+                            <a href="#">www.die-perfekte-kreuzfahrt.de</a>
+                            <a href="#">info@die-perfekte-kreuzfahrt.de</a>
+                            <a href="#" class="fb-link">Empfehlen Sie uns weiter</a>
+                        </div>
+                        <nav class="nav-menu-footer footer-nav-set capitalis">
+                            <ul>
+                                <li><a href="#">impressum</a></li>
+                                <li><a href="#">agb</a></li>
+                                <li><a href="#">newsletter</a></li>
+                                <li><a href="#">kontakt</a></li>
+                                <li><a href="#">unsere buros</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <nav class="nav-menu-footer item-footer footer-nav-set pull-left">
+                        <h3 class="title-menu-footer">Schiffe</h3>
+                        <ul>
+                            <li><a href="#">AIDAblu</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">AIDAdiva</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="nav-menu-footer item-footer footer-nav-set reiseregionen pull-left">
+                        <h3 class="title-menu-footer">Reiseregionen</h3>
+                        <ul class="split-list">
+                            <li><a href="#">AIDAblu</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">AIDAdiva</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAblu</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">AIDAdiva</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAblu</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">AIDAdiva</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">AIDAsol</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAmar</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">Costa Mediterranea</a></li>
+                            <li><a href="#">AIDAvita</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+
+                <!--FOOTER TOUCH-->
+                <nav class="footer-menu-mobile">
+                   <div class="inner-footer-mobile">
+                        <span class="footer-logo">
+                            <a class="logo" href="index.html"><img src="lib/img/logo.png"></a>
+                        </span>
+                        <div class="footer-info pull-left">
+                            <h4 class="reservation">Buchungshotline</h4>
+                            <h4 class="phone">0421 / 69 66 44-0</h4>
+                            <h4 class="entry-text">Mo-Fr 8-18 Uhr | Sa 8-13 Uhr</h4>
+                            <h4 class="entry-text">0,048/Min. Zum Festnetztarif</h4>
+                        </div>
+                        <div class="nav-social footer-nav-set pull-left">
+                            <a href="#">www.die-perfekte-kreuzfahrt.de</a>
+                            <a href="#">info@die-perfekte-kreuzfahrt.de</a>
+                            <div class="site-facebook">
+                                <div class="fb-like" data-href="index.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                            </div>
+                        </div>
+                        <div class="container-btn-social btn-icon pull-left">
+                            <a class="btn btn-default" href="mailto:"><i class="icon icon-newsletter"></i></a>
+                            <a class="btn btn-default" href="#" ><i class="icon icon-fb_pos"></i></a>
+                            <a class="btn btn-default" href="mailto:"><i class="icon icon-mail"></i></a>
+                            <a class="btn btn-default phone-btn" href="tel:"><i class="icon icon-phone"></i></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
